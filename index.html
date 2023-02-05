@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>benjo.</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="https://cdn.discordapp.com/avatars/479174570356506624/023b778f4420f8f3a8303ed1daf7736b.webp?size=128"
+      alt="Profile Picture">
+    <div class="title">
+      <p class="name">benjo.</p>
+      <p class="role">student</p>
+    </div>
+    <div class="line"></div>
+    <div class="social-buttons">
+      <a href="https://github.com/benilol98" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:beni98@cock.li" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://steamcommunity.com/id/benikegaming" target="_blank">
+        <i class="fab fa-steam"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-discord"></i>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  const role = document.querySelector('.role');
+  if (role) {
+    let counter = 0;
+    const roles = ['gamer', 'programmer', 'boyfriend', 'student'];
+    setInterval(() => {
+      role.style.opacity = 0;
+      setTimeout(() => {
+        role.innerHTML = roles[counter];
+        role.style.opacity = 1;
+        counter = (counter + 1) % roles.length;
+      }, 500);
+    }, 2000);
+  }
+</script>
