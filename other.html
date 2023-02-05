@@ -31,18 +31,25 @@
   <div class="navbar">
     <a href="./index.html">benjo</a>
     <span style="color: #fff;">|</span>
-    <a href="./other.html">other sites</a>
+    <a href="#">other sites</a>
     <span style="color: #fff;">|</span>
     <a href="./whatido.html">what i do</a>
     <span style="color: #fff;">|</span>
-    <a href="#">contact</a>
+    <a href="./contact.html">contact</a>
   </div>
   <div class="container">
-    <img src="https://cdn.discordapp.com/avatars/479174570356506624/023b778f4420f8f3a8303ed1daf7736b.webp?size=128"
-      alt="Profile Picture">
     <div class="title">
-      <p class="name">benjo.</p>
-      <p class="role">student</p>
+      <p class="name">What sites do you recommend?</p>
+      <p class="role">Based ones.</p>
+      <p>These are some of the websites I'd recommend you to visit at least once in your lifetime.</p>
+      <p>Vince's epic site <a style="text-decoration: none; color: grey;" target="_blank"
+          href="https://petrik.lol">petrik.lol</a></p>
+
+      <p>The most based linux distro <a style="text-decoration: none; color: grey;" target="_blank"
+          href="https://kisslinux.org">KISS Linux</a></p>
+
+      <p>(WIP) Bad word site <a style="text-decoration: none; color: grey;" target="_blank"
+          href="https://glowniggers.monster">GN</a></p>
     </div>
     <div class="line"></div>
     <div class="social-buttons">
@@ -63,19 +70,3 @@
 </body>
 
 </html>
-
-<script>
-  const role = document.querySelector('.role');
-  if (role) {
-    let counter = 0;
-    const roles = ['gamer', 'programmer', 'boyfriend', 'student'];
-    setInterval(() => {
-      role.style.opacity = 0;
-      setTimeout(() => {
-        role.innerHTML = roles[counter];
-        role.style.opacity = 1;
-        counter = (counter + 1) % roles.length;
-      }, 500);
-    }, 2000);
-  }
-</script>
