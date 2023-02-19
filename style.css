@@ -27,6 +27,15 @@ body {
   margin: 20px auto;
   background-color: white;
 }
+
+.discord:hover {
+  text-decoration: underline;
+}
+
+.discord {
+  color: grey;
+}
+
 .social-buttons {
   display: flex;
   justify-content: center;
