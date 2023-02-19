@@ -27,8 +27,9 @@
       <p class="role">why would you want to?</p>
       <p>If you have a business opportunity not worth missing you can reach me here:</p>
       <p>Email: <a href="mailto:beni98@cock.li" class="link">beni98@cock.li</a></p>
-      <p>Discord(ew): <a class="link" href="#">benike#8102</a> (i'll prolly not update
-        this)</p>
+      <p>Discord(ew):
+        <code class="discord" onclick="copyConfig('benike#8102')">benike#8102</code>
+      </p>
       <p>If you want to contact me about why the site is this ugly, then my answer is: <br> i don't give a fuck about
         making
         this site look nice (nor the source of it).</p>
@@ -49,6 +50,12 @@
       </a>
     </div>
   </div>
+  <script>
+    function copyConfig(txt) {
+      navigator.clipboard.writeText(txt);
+      alert("Copied to clipboard!");
+    }
+  </script>
 </body>
 
 </html>
