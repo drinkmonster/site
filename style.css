@@ -32,6 +32,11 @@ body {
   text-decoration: underline;
 }
 
+.webring {
+  height: 31px;
+  width: 88px;
+}
+
 .discord {
   color: grey;
 }
